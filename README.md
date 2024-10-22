@@ -64,7 +64,7 @@ public class TokoMedia(string namabarang)
 ```
 - This class represent a store that contains a list of item Barang and nama ( Nama )
 - ToString() method will return a string such as "Toko Haji_Sports" or "Toko sportStation" when the object is printed
-- in this code there is a new() type, new() is used to create a new object of type "List<Barang>". Since the type "List<Barang>" is already known from the property definition, you don't need t write "new List<Barang>()" in full. "new()" is sufficient to initialize an empty list.
+- in this code there is a new() type, new() is used to create a new object of type "List\<Barang>". Since the type "List\<Barang>" is already known from the property definition, you don't need t write "new List\<Barang>()" in full. "new()" is sufficient to initialize an empty list.
 - { get;} is a way to define a property in C#. Properties are used to access data(fields) from an object safely, usually using a getter (to read data) and a setter (to modify data).
 now we need the shoe and clothes class
 
@@ -128,9 +128,10 @@ public abstract class Barang(string namaBarang)
 ### Abstract & Override in method 
 - The same general function, but when faced with a specific object, it will have a specific function as well, this is called OVERRIDING.
 - for vehicles with a general concept, this is called ABSTRACT because you can't directly say how a vehicle moves or stops without mentioning the specific vehicle.
-Illustrate of Abstract:
+
+<!-- Illustrate of Abstract: -->
 Imagine we have a vehicle that can move and stop. However, since each vehicle has a unique way of moving and stopping, we can't immediately explain how it works. This is called abstraction--the general concept exists, but we can't determine the specifics without knowing the particular type of vehicle.
-Illustrate of Override:
+<!-- Illustrate of Override: -->
 For example, my younger sibling has a motorcycle. This motorcycle can move with wheels and stop with brakes. When we define how the motorcycle moves and stops, we are doing overriding. This means we take the general functions of moving and stopping from the parent class of vehicles, but we replace how they work with an implementation that is suitable for motorcycles.
 
 
@@ -170,4 +171,4 @@ Console.WriteLine($"Total TOKO {toko.Count}");
 ### Conclusion
 This demonstrates the use of object-oriented principles in C#, specifically focusing on concepts of abstration and method overriding. By using an abstract base class to defene common behaviors and allowing derived classes to provide specific implementations, we can create flexible and reusable code. The TokoMedia class and its items (such as Sepatu and Baju) showcase how we can structure data effectively while applying these concepts. Feel free to extend this examp by adding more store types and products to see how abstraction and overriding can be applied in various scenarios.
 
-Thank you for checking out my job! Contribution, suggestions, and feedback are always welcome.
+__Thank you for checking out my job! Contribution, suggestions, and feedback are always welcome.
